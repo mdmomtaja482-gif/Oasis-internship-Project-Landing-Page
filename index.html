@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>9's Cafe — Small-Batch Coffee, Roasted to Order</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">9C</span>
+          9's Cafe
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#roasts"  class="nav-link">Roasts</a></li>
+          <li><a href="#story"   class="nav-link">Our Story</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faq"     class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle"
+                  aria-label="Toggle dark mode"
+                  title="Toggle theme">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+            </svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+
+          <a class="btn btn-primary nav-cta" href="#subscribe" data-subscribe>
+            Subscribe
+          </a>
+
+          <button class="menu-toggle" id="menuToggle"
+                  aria-label="Toggle navigation menu"
+                  aria-expanded="false"
+                  aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Roasted every Tuesday</span>
+            <h1>Coffee that tastes like it was made for you.</h1>
+            <p class="lead">
+              Small-batch beans from twelve family farms, roasted to order and
+              on your doorstep within 48 hours. No warehouses. No stale shelves.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-subscribe>
+                Start your subscription
+              </button>
+              <a class="btn btn-ghost" href="#roasts">Explore the roasts</a>
+            </div>
+
+            <div class="hero-proof">
+              <div>
+                <strong>48 hrs</strong>
+                <span>Roast to doorstep</span>
+              </div>
+              <div>
+                <strong>12</strong>
+                <span>Partner farms</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>From 2,400 reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="roast-card">
+              <div class="roast-card__top">
+                <span class="pill">Single origin</span>
+                <span class="pill pill--gold">Medium roast</span>
+              </div>
+
+              <div class="roast-card__art">
+                <svg viewBox="0 0 220 200" role="img" aria-label="Illustration of a freshly poured cup of coffee">
+                  <ellipse cx="110" cy="178" rx="82" ry="12" fill="rgba(221,161,94,0.22)" />
+                  <path d="M52 66 h116 l-12 84 a22 22 0 0 1 -22 19 h-48 a22 22 0 0 1 -22 -19 z" fill="#f3e3d0" />
+                  <path d="M168 84 h14 a26 26 0 0 1 0 52 h-16" fill="none" stroke="#f3e3d0" stroke-width="12" stroke-linecap="round" />
+                  <ellipse cx="110" cy="66" rx="58" ry="12" fill="#c05f2c" />
+                  <ellipse cx="110" cy="66" rx="45" ry="8" fill="#9d4a1e" />
+                  <path d="M92 46 c8 -10 -8 -16 0 -26" fill="none" stroke="rgba(250,244,236,0.55)" stroke-width="5" stroke-linecap="round" />
+                  <path d="M128 46 c8 -10 -8 -16 0 -26" fill="none" stroke="rgba(250,244,236,0.55)" stroke-width="5" stroke-linecap="round" />
+                </svg>
+              </div>
+
+              <div class="roast-card__bottom">
+                <div>
+                  <strong>Ethiopia Guji</strong>
+                  <small>Cocoa, plum &amp; a bright citrus finish</small>
+                </div>
+                <div class="roast-price">₹549 <span>/ 250g</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section features" id="roasts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why 9's Cafe</span>
+          <h2>Everything a great cup needs, nothing it doesn't.</h2>
+          <p>We obsess over the details between the farm and your kitchen counter.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7.5V12l3 2" />
+              </svg>
+            </div>
+            <h3>Roasted to order</h3>
+            <p>
+              Your beans hit the roaster the day your order lands. We never roast
+              into a warehouse, so every bag arrives at peak flavour.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h11v9H3z" />
+                <path d="M14 10h3.5l3.5 3v3h-7z" />
+                <circle cx="7" cy="18.5" r="1.8" />
+                <circle cx="17.5" cy="18.5" r="1.8" />
+              </svg>
+            </div>
+            <h3>Free carbon-neutral delivery</h3>
+            <p>
+              Every parcel ships free, offset twice over, and arrives in a
+              compostable bag you can toss straight into the garden bin.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 11a8 8 0 0 0-13.7-5.7L4 7.6" />
+                <path d="M4 3.6v4h4" />
+                <path d="M4 13a8 8 0 0 0 13.7 5.7l2.3-2.3" />
+                <path d="M20 20.4v-4h-4" />
+              </svg>
+            </div>
+            <h3>Swap, pause, cancel</h3>
+            <p>
+              Change roasts or skip a delivery from your account in two clicks.
+              No phone calls, no retention scripts, no lock-in.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story" id="story">
+      <div class="container">
+        <div class="story-grid">
+
+          <div class="reveal">
+            <span class="eyebrow">Our story</span>
+            <h2>Two roasters, one very small drum, and a stubborn idea.</h2>
+            <p>
+              9's Cafe started in a garage in 2016 with a second-hand
+              5-kilo roaster and a simple belief: coffee should be bought from
+              people you could call by name.
+            </p>
+            <p>
+              Nine years later we still buy directly from every farm we work
+              with, still pay above fair-trade rates, and still roast in batches
+              small enough to taste every single one.
+            </p>
+            <button class="btn btn-light" data-subscribe>Taste the difference</button>
+          </div>
+
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat-num">9</span>
+              <span class="stat-label">Years roasting in small batches</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Directly traded, farm by farm</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">48h</span>
+              <span class="stat-label">From roaster to your door</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">0</span>
+              <span class="stat-label">Plastic in our packaging</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Reviews</span>
+          <h2>Loved by people who take their mornings seriously.</h2>
+          <p>Over 2,400 subscribers and counting.</p>
+        </div>
+
+        <div class="quotes-grid">
+
+          <figure class="quote reveal">
+            <blockquote>
+              “I cancelled three other subscriptions after my first bag. The
+              Guji arrived four days off the roast and it completely changed
+              how I brew at home.”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">AR</span>
+              <span>
+                <strong>Ananya Rao</strong>
+                <small>Home brewer, Bengaluru</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <blockquote>
+              “We serve 9's Cafe in the café now. Consistent, traceable,
+              and the team actually answers the phone when you have a question
+              about a lot number.”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">MK</span>
+              <span>
+                <strong>Marcus Klein</strong>
+                <small>Owner, Fern Street Café</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal">
+            <blockquote>
+              “Being able to skip a week when I travel, without an email chain
+              or a hidden fee, is the reason I'm still subscribed two years in.”
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">JD</span>
+              <span>
+                <strong>Julia Devane</strong>
+                <small>Subscriber since 2023</small>
+              </span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Questions</span>
+          <h2>Everything you wanted to ask.</h2>
+          <p>Still stuck? Write to us at hello@9scafe.example.</p>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How fresh is the coffee when it arrives?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We roast every Tuesday and Thursday, and ship the same day. Most
+                orders arrive 2–4 days off the roast — the sweet spot for filter
+                and espresso alike.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I change my roast or grind size later?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, any time. Log into your account and update your preferences
+                up to 24 hours before your next dispatch — no emails, no calls
+                required.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you ship internationally?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We currently ship across the US, Canada, the UK, and the EU.
+                International orders usually land within 5–7 business days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I don't like a roast?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tell us within 14 days and we'll send a replacement of your
+                choice, or refund the bag entirely. No return shipping, no
+                questions asked.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is the packaging really compostable?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes — the bag, the valve, and the label are all home-compostable
+                and break down within 12 weeks in a standard garden bin.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Say hello</span>
+            <h2>Questions, wholesale, or just want to talk coffee?</h2>
+            <p>
+              Fill in the form and we'll get back to you within one business
+              day. For urgent orders, call us on
+              <a href="tel:+15550123456" class="contact-link">+1 (555) 012-3456</a>.
+            </p>
+
+            <ul class="contact-details">
+              <li>
+                <span class="contact-dot" aria-hidden="true"></span>
+                <span>hello@9scafe.example</span>
+              </li>
+              <li>
+                <span class="contact-dot" aria-hidden="true"></span>
+                <span>Mon–Fri · 9am to 6pm PST</span>
+              </li>
+              <li>
+                <span class="contact-dot" aria-hidden="true"></span>
+                <span>142 Alder Street, Portland, OR</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Ananya Rao" required />
+              <small class="form-error" data-error-for="name"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <small class="form-error" data-error-for="email"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"
+                        placeholder="Tell us what's on your mind…" required></textarea>
+              <small class="form-error" data-error-for="message"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Send message
+            </button>
+            <p class="form-note">
+              We reply within one business day. No marketing spam, ever.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta-section" id="subscribe">
+      <div class="container">
+        <div class="cta-card reveal">
+          <h2>Your first bag is on us.</h2>
+          <p>
+            Subscribe today and we'll add a free 100g taster of our seasonal
+            micro-lot to your first delivery. Pause or cancel any time.
+          </p>
+          <div class="cta-actions">
+            <button class="btn btn-light" data-subscribe>Claim your free taster</button>
+            <a class="btn btn-ghost btn-ghost--light" href="#roasts">
+              See this month's roasts
+            </a>
+          </div>
+          <p class="cta-note">No commitment · Free delivery · Cancel in two clicks</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <span class="brand-mark" aria-hidden="true">9C</span>
+            9's Cafe
+          </a>
+          <p>
+            Small-batch coffee roasted in Portland and shipped fresh across the
+            country, one farm at a time.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#roasts">Single origins</a></li>
+            <li><a href="#roasts">Blends</a></li>
+            <li><a href="#subscribe">Subscriptions</a></li>
+            <li><a href="#top">Gift cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#story">Our story</a></li>
+            <li><a href="#story">Sourcing</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@9scafe.example">hello@9scafe.example</a></li>
+            <li><a href="tel:+15550123456">+1 (555) 012-3456</a></li>
+            <li><a href="#top">Instagram</a></li>
+            <li><a href="#top">YouTube</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 9's Cafe Coffee Roasters. All rights reserved.</span>
+        <span>Privacy · Terms · Accessibility</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast__icon" aria-hidden="true">✓</span>
+    <span class="toast__message" id="toastMessage">Subscription started!</span>
+  </div>
+
+  <!-- ============ NEWSLETTER POPUP ============ -->
+  <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <button class="popup-close" id="popupClose" aria-label="Close popup">×</button>
+
+      <span class="eyebrow">Free taster</span>
+      <h3 id="popupTitle" class="popup-title">
+        Get a free 100g bag with your first order.
+      </h3>
+      <p class="popup-text">
+        Join the newsletter for roast drops, brewing notes, and a one-time
+        discount code. No spam, unsubscribe in one click.
+      </p>
+
+      <form class="popup-form" id="popupForm" novalidate>
+        <input type="email" id="popupEmail" placeholder="you@example.com" required />
+        <button type="submit" class="btn btn-primary">Send my taster</button>
+        <small class="form-error" id="popupError"></small>
+      </form>
+
+      <button class="popup-skip" id="popupSkip">No thanks, I'll pay full price</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
